@@ -1,0 +1,7 @@
+deploy:
+  provider: heroku
+  api_key:
+    secure: L3BIgJEMoCGbsrA235wEK1LObMUMCq56iFo11uqfbsOGBL5vx86prk1W9WPTcPaZWNEY/7IstjtOqdL6ODRL7nc2tAjKUigE4T47XSS33GZsGWJm7ani9WC+eZsGzeSeoP8xhq2NWOWB/BJiO7imyXch0CMNeLwnCPvdi+nLLjk=
+  app: symbols-mozilla-org
+  on:
+    repo: mozilla/symbols.m.o
