@@ -1,4 +1,4 @@
-language: php
+script: true
 deploy:
   provider: heroku
   api_key:
