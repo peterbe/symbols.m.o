@@ -2,7 +2,7 @@ script: true
 deploy:
   provider: heroku
   api_key:
-    secure: L3BIgJEMoCGbsrA235wEK1LObMUMCq56iFo11uqfbsOGBL5vx86prk1W9WPTcPaZWNEY/7IstjtOqdL6ODRL7nc2tAjKUigE4T47XSS33GZsGWJm7ani9WC+eZsGzeSeoP8xhq2NWOWB/BJiO7imyXch0CMNeLwnCPvdi+nLLjk=
+    secure: JH9mUcEn5pzdthvccP8cq5E9EwUtZaXX8aJV8gs5nVodO/bqUzxnA3l9W5dnA1VKKJZR9ViRaY65t4zmnGmKGGHcYEP+fVACMOoFXNTYE80qDf/MEDNe+0/nIov9hnVDnIMApe4yFpzyMkzEOTb2DZxSIvUayWCQY/J8CrMTSqs=
   app: symbols-mozilla-org
   on:
     repo: mozilla/symbols.m.o
