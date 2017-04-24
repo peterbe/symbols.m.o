@@ -9,11 +9,11 @@
 # NOTE: be sure to only use symbols that aren't going to get removed from
 # the symbol server. The URLs in use here are all from Firefox 18.0.2.
 
-import os
 import sys
 import unittest
 import urllib2
 import urlparse
+
 
 class TestSymbolServer(unittest.TestCase):
     SERVER = 'http://symbols.mozilla.org/'
@@ -23,8 +23,8 @@ class TestSymbolServer(unittest.TestCase):
         req = urllib2.Request(full_url)
         if first_line is None:
             # Do a HEAD if we don't care about the data.
-            req.get_method = lambda : 'HEAD'
-        res = urllib2.urlopen(full_url)
+            req.get_method = lambda: 'HEAD'
+        res = urllib2.urlopen(req)
         # If we ever make symbols.mo return redirects instead of proxying,
         # this will have to change. Maybe just require `requests`.
         self.assertEqual(res.getcode(), 200)
